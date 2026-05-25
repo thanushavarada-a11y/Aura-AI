@@ -18,16 +18,6 @@ Aura AI is a modern, responsive React + TypeScript chat interface built on Vite 
 
 ---
 
-## 🛠️ Integrated Tools
-
-1. **Calculator Tool**: Parses math formulas and evaluates them safely.
-2. **Current Date/Time Tool**: Returns system date/time variables.
-3. **Weather Tool**: Checks real-time mock meteorological forecasts.
-4. **Wikipedia Summary Tool**: Fetches live page summaries from the public Wikipedia REST API.
-5. **URL Opener**: Validates web addresses and redirects users in new tabs.
-6. **Notes/Memory Notepad**: Persists notes inside LocalStorage, allowing users to save, retrieve, list, or delete notes dynamically (e.g. *"save note: project meeting tomorrow at 9 AM"*).
-
----
 
 ## 🚀 Getting Started
 
