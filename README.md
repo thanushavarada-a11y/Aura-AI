@@ -37,7 +37,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher).
 
 3. Open `.env` and configure your API Key:
    ```env
-   VITE_GEMINI_API_KEY=AIzaSy...yourKeyHere
+   VITE_GEMINI_API_KEY=yourKeyHere
    ```
    *Note: Get a free key from [Google AI Studio](https://aistudio.google.com/).*
 
