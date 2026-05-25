@@ -4,36 +4,6 @@ Aura AI is a modern, responsive React + TypeScript chat interface built on Vite 
 
 ---
 
-## 🧠 AI Agent Architecture (How it Works Without LangChain)
-
-Unlike heavy frameworks like LangChain, Aura AI uses clean, explicit TypeScript design patterns to run a complete **ReAct (Reasoning and Action) Loop**.
-
-```
-[User Message]
-       │
-       ▼
-1. [Intent Router (Gemini)] 
-       │
-       ├─► Decides "none" ───────────────────────────────────┐
-       │                                                     │
-       ▼ (Decides a Tool is required)                         │
-2. [Structure Tool Call JSON]                                │
-       │                                                     │
-       ▼                                                     │
-3. [Execute local TypeScript function]                       │
-       │  - calculator, get_weather, wikipedia_summary, etc.  │
-       ▼                                                     │
-4. [Tool output retrieved]                                   │
-       │                                                     │
-       └──────────────────────► 5. [Compile Context] ◄───────┘
-                                       │
-                                       ▼
-                       6. [Final Synthesis (Gemini)]
-                                       │
-                                       ▼
-                       7. [Render reasoning trace in UI]
-```
-
 ### The 3 Stages of the Agent Loop
 
 1. **Intent Classification & Routing (`src/intentRouter.ts`)**:
